@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+/*Navigation*/
+.navbar,.logo,.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 998;
+    background-color:#f1f5ff;
+}
+.logo{
+    list-style: none;
+}
+.menu{
+    list-style-type: none;
+    Margin: 0 10px 0 0;
+}
+.item{
+    padding: 10px;
+}
+.darkmode{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/*Overlay Box for Modals for Links*/
+/*Modal1*/
+.modal-container{
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow-x: hidden;
+    border: 2px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+.LinkContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 10px;
+}
+.Link button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin: auto;
+    display: block;
+}
+.Link{
+    padding: 10px;
+    list-style: none;
+}
+/*Modal2*/
+.circleImg img{
+    height: 100px;
+    width: 200px;
+    border-radius: 9999;
+}
+.is-round{
+    border-radius: 100%;
+}
+/*Modal3*/
+
+/*Modal4*/
+.modal-container:nth-child(5) .modal-content{ 
+    background-color: white;
+}
+.TextContent{
+    background-color: rgb(234, 243, 239);
+    Border-bottom: 2px solid rgb(132, 148, 148);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+.TextContent li{
+    list-style: none;
+}
+.ColumnContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 0;
+}
+.Column1
+{
+    border-radius: 20px;
+    padding-right: 30px;
+    
+}
+form input, textarea{
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+#input-field
+{
+}
+/*Box for Contacts the home content container*/
+.Bar{
+    top: 0;
+    left: 0;
+    position: relative;
+    Border-bottom: 2px solid rgb(132, 148, 148);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgb(134, 158, 158);
+    padding: 20px 30px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.Bar button{
+    padding: 5px;
+    border-right: 4px solid rgb(148, 182, 169);
+    border-bottom: 4px solid rgb(148, 182, 169);
+    border-radius: 10px;
+}
+.Bar button:hover{
+    padding: 5px;
+    border-right: 2px solid lightblue;
+    border-bottom: 2px solid lightblue;
+    border-radius: 10px;
+    transition: ease-in-out 1.s;
+}
+.ContactBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:white;
+    border: 2px solid rgb(82, 94, 89);
+    border-bottom: 5px solid rgb(116, 131, 130);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    z-index: 997;
+    overflow-x: hidden;
+}
+.ContactContainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.Content
+{
+    Padding: 12vh 5vw;
+}
+.textContainer{
+    Padding: 25px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.color{
+    color:rgb(100, 194, 194);
+}
+.IconContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 15px;
+}
+.IconContainer svg{
+    filter: drop-shadow( 1px 5px 2px rgba(0, 0, 0, .2));
+    fill: rgb(60, 71, 67);
+}
+.IconContainer button:hover{
+    transform: scale(.9);
+    transition: .5s all ease-in-out;
+}
+.IconContainer button svg:hover{
+    fill:rgb(120, 141, 136);
+    transition: .5s all ease-in-out;
+    transform-origin: 50% 50%;
+}
+.Icon{
+    list-style: none;
+    padding: 4px
+}
+.Icon button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin: auto;
+    display: block;
+}
+.Icon p{
+    text-align: center;
+}
+/*Singing Shark on Scroll*/
+.moving-button{
+    position: absolute;
+    bottom: 150px;
+    right: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin: auto;
+    display: block;
+    animation: moveUpDown 1s ease-in-out infinite alternate;
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+.moving-button img{
+    height: 150px;
+    width: 150px;
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/*Animated Waves*/
+.spacer{
+    position: relative;
+}
+.spacer, #visual{
+    aspect-ratio: 900/450;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.parrallax > path {
+    animation: Wave 5s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+}
+
+.parrallax > path:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parrallax > path:nth-child(2) {
+    animation-delay: -4s;
+    animation-duration: 10s;
+}
+
+.parrallax > path:nth-child(3) {
+    animation-delay: -6s;
+    animation-duration: 14s;
+}
+.parrallax > path:nth-child(4) {
+    animation-delay: -8s;
+    animation-duration: 18s;
+
+}
+.parrallax > path:nth-child(5) {
+    animation-delay: -10s;
+    animation-duration: 20s;
+
+}
+
+@keyframes Wave {
+    0%, 100%{
+        transform: translate3d(0, 0px, 0);
+    }
+    50%{
+        transform: translate3d(0, 15px, 0px);
+    }
+}
+
+/*Parallax images*/
+/*
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+
+}
+*/
+/*Ratios for parallaxing images in order from back to frontmost img*/
